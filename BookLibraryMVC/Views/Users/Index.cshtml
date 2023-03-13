@@ -1,0 +1,12 @@
+﻿@model IEnumerable<UserModel>
+
+<div class="section">
+	@foreach(var u in Model)
+	{
+		<div class="part">
+			<h6>@u.FirstName</h6>
+			<h6>@u.LastName</h6>
+			<h6>@u.Email</h6>
+		</div>
+	}
+</div>
